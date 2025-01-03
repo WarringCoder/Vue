@@ -10,18 +10,18 @@
 <div id="app">
     <section class="row">
         <div class="small-6 columns">
-            <h1 class="text-center">SEN</h1>
+            <h1 class="text-center">İSHAK</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                <div :style="{width : player_heal + '%'}" class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
+                    {{player_heal}} %
                 </div>
             </div>
         </div>
         <div class="small-6 columns">
             <h1 class="text-center">CANAVAR</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                <div :style="{width : monster_heal + '%'}" class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
+                     {{monster_heal}} %
                 </div>
             </div>
         </div>
