@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Learning.../CSS/lesson1.css"> <!-- CSS dosyası doğru yolda olmalı -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> <!-- Vue.js -->
+    <title>Vue Instance Example</title>
+</head>
+<body>
+    <div id="OneInstance">
+        <button @click="ShownstanceOne">Birinci İnstanceyi göster</button>
+        <h1 v-if="OneInstanceButton" class="name">Birinci İnstance Örneği</h1>
+    </div>
+    <div id="TwoInstance">
+        <button @click="ShownstanceTwo">İkinci İnstanceyi göster</button>
+        <h1 v-if="TwoInstanceButton" class="namee">İkinci İnstance Örneği</h1>
+    </div>
+    <script src="/Learning.../JS/lesson1.js"></script> <!-- JS dosyası -->
+</body>
+</html>
