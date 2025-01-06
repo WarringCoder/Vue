@@ -15,6 +15,9 @@ var vm1 = new Vue({
     }
 });
 
+setTimeout(function(){
+    vm1.h1 = "Timer tarafından değiştirildi"
+},2000)
 var vm2 = new Vue({
     el: "#TwoInstance",
     data: {
