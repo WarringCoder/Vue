@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="OneInstance">
-        <button @click="ShownstanceOne">Birinci İnstanceyi göster</button>
+        <button @click="ShownstanceOne" ref="MyButton">Birinci İnstanceyi göster</button>
         <h1 v-if="OneInstanceButton" class="name">{{h1}}</h1>
     </div>
     <div id="TwoInstance">

@@ -2,22 +2,24 @@ var vm1 = new Vue({
     el: "#OneInstance",
     data: {
         OneInstanceButton: false, // Başlangıç değeri
-        h1:"Birinci İnstance Örneği",
+        h1:"Birinci İnstance Örneği"
     },
     methods: {
          ShownstanceOne: function () {
             if (this.OneInstanceButton === false) { // Doğru şekilde karşılaştırma
                 this.OneInstanceButton = true; // Durumu değiştir
+                this.$refs.MyButton.innerText = "Ref Testi Başarılı"
             } else {
                 this.OneInstanceButton = false; // Durumu eski haline getir
             }
+            
         }
     }
 });
 
 setTimeout(function(){
     vm1.h1 = "Timer tarafından değiştirildi"
-},2000)
+},4000)
 var vm2 = new Vue({
     el: "#TwoInstance",
     data: {
