@@ -1,7 +1,8 @@
-new Vue({
+var vm1 = new Vue({
     el: "#OneInstance",
     data: {
         OneInstanceButton: false, // Başlangıç değeri
+        h1:"Birinci İnstance Örneği",
     },
     methods: {
          ShownstanceOne: function () {
@@ -14,7 +15,7 @@ new Vue({
     }
 });
 
-new Vue({
+var vm2 = new Vue({
     el: "#TwoInstance",
     data: {
         TwoInstanceButton: false, // Başlangıç değeri
@@ -26,6 +27,9 @@ new Vue({
             } else {
                 this.TwoInstanceButton = false; // Durumu eski haline getir
             }
+        },
+        Changeh1: function (){
+            vm1.h1 = "instance 2 tarafında değiştirildi"
         }
     }
 });

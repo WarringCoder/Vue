@@ -10,11 +10,12 @@
 <body>
     <div id="OneInstance">
         <button @click="ShownstanceOne">Birinci İnstanceyi göster</button>
-        <h1 v-if="OneInstanceButton" class="name">Birinci İnstance Örneği</h1>
+        <h1 v-if="OneInstanceButton" class="name">{{h1}}</h1>
     </div>
     <div id="TwoInstance">
         <button @click="ShownstanceTwo">İkinci İnstanceyi göster</button>
         <h1 v-if="TwoInstanceButton" class="namee">İkinci İnstance Örneği</h1>
+        <button @click="Changeh1">instance 1 i değiştir</button>
     </div>
     <script src="/Learning.../JS/lesson1.js"></script> <!-- JS dosyası -->
 </body>
