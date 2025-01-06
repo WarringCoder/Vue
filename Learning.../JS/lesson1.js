@@ -39,3 +39,9 @@ var vm2 = new Vue({
     }
 });
 
+var vm3 = new Vue({
+    template: '<h1>Mount Etme ve Template Kavramlarını Öğrendim</h1>'
+});
+
+vm3.$mount('#ThreeInstance')
+
