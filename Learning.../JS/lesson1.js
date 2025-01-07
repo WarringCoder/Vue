@@ -1,3 +1,7 @@
+Vue.component('hello', {
+    template: "<h4>Vue Component Öğrendim. İstersem 3 yerde de Kullanabilirim </h4>"
+});
+
 var vm1 = new Vue({
     el: "#OneInstance",
     data: {
@@ -43,5 +47,7 @@ var vm3 = new Vue({
     template: '<h1>Mount Etme ve Template Kavramlarını Öğrendim</h1>'
 });
 
-vm3.$mount('#ThreeInstance')
+vm3.$mount('#ThreeInstance');
+
+
 
