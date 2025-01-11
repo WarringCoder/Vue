@@ -1,15 +1,35 @@
-Vue.component('mycomp', {
+var cmp =  {
     data:function(){
         return{
-            status:"pasif"
+            status:"Pasif"
         }
     },
-    template: '<h1>Componentlere Giriş</h1>'
+    template: '<p>Componentlere Giriş : {{status}} (<button @click="changeStatus">Değiştir</button>) </p>',
+    methods: {
+        changeStatus: function() {
+            if(this.status=="Pasif")
+            {
+                this.status =  "Aktif"
+            }
+            else
+            {
+                this.status =  "Pasif"
+            }
+        }
+    }
+}
+
+new Vue({
+    el: "#app1",
+    components: {
+        "mycomp" : cmp 
+    }
+
 });
 
 new Vue({
-    el: "#component",
-
+    el: "#app2",
+   
 });
 
 
