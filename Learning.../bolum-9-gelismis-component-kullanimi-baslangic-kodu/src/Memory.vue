@@ -1,9 +1,20 @@
 <template>
   <div>
-    <p class="text-center"> Bu çok güzel bir anıdır...</p>
+    <div>
+      <slot name="Head"></slot>
+    </div>
+    <div>
+      <slot name="content"></slot>
+    </div>
+    <div>
+      <slot name="content1"></slot>
+    </div>
   </div>
 </template>
 <script>
+  export default{
+    props:["content"]
+  }
 </script>
 <style scoped>
   div {
