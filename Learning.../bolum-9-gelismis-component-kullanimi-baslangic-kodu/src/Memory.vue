@@ -10,7 +10,7 @@
       <slot name="content1"></slot>
     </div>
   </div>
-</template>
+</template> 
 <script>
   export default{
     props:["content"]
