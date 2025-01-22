@@ -1,6 +1,6 @@
 <template>
     <div class="FormProjects">
-        <h2>Form Projesi</h2>
+        <h2>Form Projesi</h2>  
         <form >
             <label>Email:</label>
             <input type="email" v-model="email" required>
