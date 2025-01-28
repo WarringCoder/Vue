@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
       <router-link to="/student">Student</router-link>
 
-    </nav>
+    </nav> 
   <router-view/>
  </div>
 </template>
