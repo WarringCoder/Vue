@@ -1,9 +1,13 @@
 <template>
   <div class="home">
     <h2>Öğrencilerim</h2>
-    <div v-for='student in students' :key="student.id">
-        <h4>{{ student.name }}</h4>
-    </div>
+    
+        <div v-for='student in students' :key="student.id">
+            <router-link :to="{name:'StudentDetail' , params:{id:student.id}}">
+                <h4>{{ student.name }}</h4>
+            </router-link>
+        </div>
+   
  </div>
 </template>
 
@@ -19,10 +23,12 @@ export default {
     return{
         students:
         [
-            {name:"İshak Eren", id:1},
-            {name:"Firdevs Rana", id:2}
+          
         ]
     }   
+  },
+  mounted(){
+    fetch('http://localhost:3000/students').then(res => res.json()).then(data =>this.students = data)
   }
 }
 </script>
