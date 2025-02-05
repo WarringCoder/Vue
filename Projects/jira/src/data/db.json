@@ -1,16 +1,16 @@
 {
-    "tasks": [
-      {
-        "title": "Backend İşlemleri",
-        "details": "Backend İşlemlerinin Yapılması .net Core Projesinde Gerekli Geliştirmelerin Yapılması",
-        "complete": true,
-        "id": 1
-      },
-      {
-        "title": "Frontend Tarafındaki Vue Js Geliştirmeleri",
-        "details": "Frontend Tarafındaki Vue Js Geliştirmeleri",
-        "complete": false,
-        "id": 2
-      }
-    ]
-  }
+  "tasks": [
+    {
+      "title": "Backend İşlemleri",
+      "details": "Backend İşlemlerinin Yapılması .net Core Projesinde Gerekli Geliştirmelerin Yapılması",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "title": "Frontend Tarafındaki Vue Js Geliştirmeleri",
+      "details": "Frontend Tarafındaki Vue Js Geliştirmeleri",
+      "complete": false,
+      "id": 2
+    }
+  ]
+}
