@@ -1,11 +1,14 @@
 <template>
-  <div class="task">
+  <div class="task" :class="{complete:task.complete}">
         <div class="actions">
             <h3 @click="toggleDetail()">{{ task.title }}</h3>
             <div>
                 <span @click="deleteTask()" class="material-symbols-outlined">delete</span>
-                <span class="material-symbols-outlined">edit</span>
-                <span @click="toggleComplete()" class="material-symbols-outlined">done</span>
+                <router-link :to="{name:'editTask',params:{id:task.id}}">
+                    <span class="material-symbols-outlined">edit</span>
+                </router-link>
+          
+                <span @click="toggleComplete()" class="material-symbols-outlined tick">done</span>
             </div>
         </div>
         <div class="details" v-if="showDetails">
@@ -68,6 +71,12 @@ h3{
     margin-left: 10px;
     color: gray;
     cursor: pointer;
+}
+.task.complete{
+    border-left: 8px solid green;
+}
+.task.complete .tick{
+    color: darkgreen;
 }
 
 </style>
